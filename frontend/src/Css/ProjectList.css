@@ -19,29 +19,56 @@
     text-align: center;
   }
   
-  .update-btn,
+  .add-btn,
+  .save-btn,
+  .cancel-btn,
+  .edit-btn,
   .delete-btn {
     padding: 6px 10px;
     margin-right: 5px;
     cursor: pointer;
-    background-color: #4caf50;
-    color: white;
     border: none;
     border-radius: 3px;
   }
   
-  .update-btn:hover,
-  .delete-btn:hover {
-    background-color: #45a049;
+  .add-btn {
+    background-color: #2196F3; /* Blue */
+    color: white;
   }
   
-  .update-btn:focus,
+  .save-btn,
+  .edit-btn {
+    background-color: #3565bf; /* Green */
+    color: white;
+  }
+  
+  .cancel-btn,
+  .delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .add-btn:hover,
+  .save-btn:hover,
+  .cancel-btn:hover,
+  .edit-btn:hover,
+  .delete-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .add-btn:focus,
+  .save-btn:focus,
+  .cancel-btn:focus,
+  .edit-btn:focus,
   .delete-btn:focus {
     outline: none;
   }
   
-  .update-btn:active,
+  .add-btn:active,
+  .save-btn:active,
+  .cancel-btn:active,
+  .edit-btn:active,
   .delete-btn:active {
-    background-color: #3e8e41;
+    background-color: #0b7dda; /* Darker Blue */
   }
   

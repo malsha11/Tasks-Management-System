@@ -86,12 +86,12 @@ app.get('/api/projects/:id', (req, res) => {
 // Update a project by ID
 app.put('/api/projects/:id', (req, res) => {
   const { id } = req.params;
-  const { name, project_manager_id } = req.body;
+  const { name, project_manager_id,tasks_name } = req.body;
   const query =
     'UPDATE projects SET name = ?, project_manager_id = ? WHERE id = ?';
   db.query(
     query,
-    [name, project_manager_id, id],
+    [name, project_manager_id,tasks_name, id],
     (err, result) => {
       if (err) {
         console.error('Error updating project:', err);

@@ -19,9 +19,7 @@ function App() {
             <li>
               <Link to="/projects">Projects</Link>
             </li>
-            <li>
-              <Link to="/tasks">Engineers</Link>
-            </li>
+            
           </ul>
         </nav>
 

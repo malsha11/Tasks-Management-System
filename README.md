@@ -1,12 +1,11 @@
 # Tasks-Management-System
 
 ## Overview
-This is a Task Management System built with React for the frontend and Node.js with Express for the backend. It allows users to manage tasks, projects, and engineers.
+This is a Task Management System built with React for the frontend and Node.js with Express for the backend. It allows users to manage tasks, projects.
 
 ## Features
 - Create, read, update, and delete tasks
 - Create, read, update, and delete projects
-- Create, read, update, and delete engineers
 - Assign tasks to engineers within projects
 - Manage project details such as project manager, deadlines, etc.
 

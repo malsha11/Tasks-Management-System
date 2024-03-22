@@ -1,4 +1,4 @@
-// TasksList.js
+// Import required modules
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../Css/TasksList.css'; // Import CSS file
@@ -145,7 +145,7 @@ function TasksList() {
           {tasks.map(task => (
             <tr key={task.id}>
               <td>{task.title}</td>
-                <td>{task.tasks_name}</td>
+              <td>{task.tasks_name}</td>
               <td>{task.description}</td>
               <td>{task.status}</td>
               <td>{task.priority}</td>
@@ -173,7 +173,7 @@ function TasksList() {
         overlayClassName="overlay"
       >
         <div className="edit-task-container">
-          <h2>Edit Task</h2>
+          <h2>{formData.id ? 'Edit Task' : 'Add Task'}</h2>
           <form onSubmit={handleSubmit} className="edit-task-form">
             <input type="text" name="title" placeholder="Title" value={formData.title} onChange={handleInputChange} required />
             <input type="text" name="tasks_name" placeholder="Task Name" value={formData.tasks_name} onChange={handleInputChange} required />
@@ -192,7 +192,7 @@ function TasksList() {
             </select>
             <input type="text" name="assigned_to" placeholder="Assigned To" value={formData.assigned_to} onChange={handleInputChange} />
             <input type="date" name="due_date" placeholder="Due Date" value={formData.due_date} onChange={handleInputChange} required />
-            <button type="submit" className="save-btn">Save</button>
+            <button type="submit" className="save-btn">{formData.id ? 'Save Changes' : 'Add Task'}</button>
             <button className="close-btn" onClick={closeModal}>Close</button>
           </form>
         </div>

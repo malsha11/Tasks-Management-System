@@ -1,0 +1,97 @@
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tasks-table th,
+.tasks-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.tasks-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.tasks-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tasks-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.edit-task-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.edit-task-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.edit-task-container input[type="text"],
+.edit-task-container input[type="date"],
+.edit-task-container select {
+  width: calc(100% - 24px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-task-container button[type="submit"],
+.edit-task-container button[type="button"] {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-task-container .save-btn {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.edit-task-container .save-btn:hover {
+  background-color: #2c3e50;
+}
+
+.edit-task-container .close-btn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.edit-task-container .close-btn:hover {
+  background-color: #c0392b;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

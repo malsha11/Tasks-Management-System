@@ -1,0 +1,39 @@
+/* projectStyles.css */
+.project-form {
+  margin-bottom: 20px;
+}
+
+.project-form form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.project-form input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.project-form button {
+  padding: 8px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.project-list {
+  max-width: 600px;
+}
+
+.project-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-list li {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
